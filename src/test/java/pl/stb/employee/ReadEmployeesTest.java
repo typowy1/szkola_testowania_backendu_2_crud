@@ -1,4 +1,4 @@
-package pl.stb;
+package pl.stb.employee;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -49,11 +49,6 @@ class ReadEmployeesTest {
         Assertions.assertEquals("Czarny", json.getString("lastName"));
         Assertions.assertEquals("bczarny", json.getString("username"));
         Assertions.assertEquals("bczarny@testerprogramuje.pl", json.getString("email"));
-
-//        firstName	"Bartek"
-//        lastName	"Czarny"
-//        username	"bczarny"
-//        email	"bczarny@testerprogramuje.pl"
 
     }
 

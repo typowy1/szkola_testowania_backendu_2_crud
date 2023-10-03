@@ -1,4 +1,4 @@
-package pl.stb;
+package pl.stb.employee;
 
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 class DeleteEmployeeTest {
 
     @Test
-    void DeleteEmployeeTest() {
+    void deleteEmployeeTest() {
         Response response = given()
                 .when()
                 .delete("http://localhost:3000/employees/15")
