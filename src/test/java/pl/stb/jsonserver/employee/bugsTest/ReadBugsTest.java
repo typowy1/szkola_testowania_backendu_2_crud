@@ -1,4 +1,4 @@
-package pl.stb.bugsTest;
+package pl.stb.jsonserver.employee.bugsTest;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

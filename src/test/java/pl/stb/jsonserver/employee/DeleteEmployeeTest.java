@@ -1,4 +1,4 @@
-package pl.stb.bugsTest;
+package pl.stb.jsonserver.employee;
 
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -7,16 +7,13 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
-class DeleteBugTest {
-
-    private static final String BASE_URL = "http://localhost:3000/bugs";
+class DeleteEmployeeTest {
 
     @Test
     void deleteEmployeeTest() {
         Response response = given()
                 .when()
-                .pathParam("id", 9)
-                .delete(BASE_URL + "/{id}")
+                .delete("http://localhost:3000/employees/15")
                 .prettyPeek()
                 .then()
                 .statusCode(HttpStatus.SC_OK)

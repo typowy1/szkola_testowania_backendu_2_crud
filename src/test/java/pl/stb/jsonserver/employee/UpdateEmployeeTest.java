@@ -1,4 +1,4 @@
-package pl.stb.employee;
+package pl.stb.jsonserver.employee;
 
 import com.github.javafaker.Faker;
 import io.restassured.http.ContentType;

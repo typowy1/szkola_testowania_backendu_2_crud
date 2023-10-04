@@ -1,4 +1,4 @@
-package pl.stb.employee;
+package pl.stb.jsonserver.employee;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
